@@ -1,2 +1,2 @@
 FROM redis:alpine
-RUN fallocate -l 5G bar
+RUN dd if=/dev/urandom of=/5gb.file.bin bs=128MB count=160
